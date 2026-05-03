@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://task-manager-backend-production.up.railway.app'
 axios.defaults.baseURL = API_BASE
 
 const AuthCtx = createContext(null)
